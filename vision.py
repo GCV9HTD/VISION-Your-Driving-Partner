@@ -3,7 +3,6 @@ from imutils.video import VideoStream
 from imutils import face_utils
 from threading import Thread
 import numpy as np
-import pygame
 import playsound
 import argparse
 import imutils
@@ -13,13 +12,6 @@ import cv2
 from twilio.rest import Client
 from tkinter import *
 def sound_alarm(path):
-    #pygame.init()
-    #pygame.mixer.init()
-    #pygame.mixer.music.load(path)
-    #pygame.mixer.music.play()
-    #pygame.mixer.music.play()
-    #time.sleep(2)
-    #pygame.mixer.music.stop()
     playsound.playsound(path)
 
 def eye_aspect_ratio(eye):
